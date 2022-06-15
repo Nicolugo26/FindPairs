@@ -17,10 +17,7 @@ public class menu : MonoBehaviour
         
     }
 
-    public void EscenaJuego()
-    {
-        SceneManager.LoadScene("Juego");
-    }
+    // Clase creada para configurar los botones que me llevaran por los diferentes escenarios.
 
     public void CargarEscena(string escenario)
     {

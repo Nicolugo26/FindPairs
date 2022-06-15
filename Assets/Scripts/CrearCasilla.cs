@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Esta clase se encarga de crear las casillas necesarias para el nivel, dependiendo de la cantidad que asigne en la variable ancho
+
 public class CrearCasilla : MonoBehaviour
 {
     public GameObject CasillaPrefab;
@@ -21,6 +23,8 @@ public class CrearCasilla : MonoBehaviour
         crear();
     }
 
+    // Esta clase me ayuda a crear las casillas configuradas en el parametro Ancho.
+    
     public void crear()
     {
         int cont = 0;
@@ -40,10 +44,13 @@ public class CrearCasilla : MonoBehaviour
             }
 
         }
+
+        // Ejecuto las funciones creadas.
         AsignarTexturas();
         Barajar();
     }
 
+    // funcion para Asignar las texturas aleatorias que estan almacenada dentro de un arreglo.
     void AsignarTexturas()
     {
         for(int i = 0; i < casillas.Count; i++)
@@ -52,6 +59,8 @@ public class CrearCasilla : MonoBehaviour
         }
     }
 
+
+    // Funcion para revolver y asignar aleatoriamente una posicion.
    void Barajar()
     {
         int aleatorio;
